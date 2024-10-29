@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilip Jedage JCB Rentals</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+            background-color: #333;
+        }
+
+        /* Marquee Styling */
+        .marquee {
+            background-color: #000;
+            color: #f7da3a;
+            font-size: 24px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #f7da3a;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f7da3a;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        /* Section Styles */
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000;
+            padding: 20px;
+        }
+
+        /* Slideshow Styling */
+        .slideshow {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: slide-animation 12s infinite;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        @keyframes slide-animation {
+            0% { opacity: 1; }
+            33% { opacity: 0; }
+            66% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .slide:nth-child(2) { animation-delay: 4s; }
+        .slide:nth-child(3) { animation-delay: 8s; }
+
+        /* Quote Styling */
+        .quote {
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+            text-align: center;
+            color: #f7da3a;
+            font-size: 24px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        /* Section Borders */
+        .separator-marquee {
+            background-color: #f7da3a;
+            color: #000;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            width: 100%;
+        }
+
+        /* Background Colors */
+        #services, #contact {
+            background-color: #fff;
+        }
+
+        #gallery {
+            background-color: #000;
+        }
+
+        /* Section Text Styling */
+        section h2 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        section p {
+            font-size: 1.5em;
+            max-width: 600px;
+        }
+
+        /* Quote Text Styling */
+        .yellow-quote {
+            color: #f7da3a;
+            background-color: #000;
+            font-size: 1.2em;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        /* Gallery Grid Styling */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #f7da3a;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="left" scrollamount="6" class="marquee">
+        Welcome to Dilip Jedage JCB Rentals! Contact us for your construction and excavation needs!
+    </marquee>
+    
+    <header>
+        <h1>Dilip Jedage JCB Rentals</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section with Sliding Photos -->
+    <section id="home" class="slideshow">
+        <div class="slide">
+            <img src="C:/website/jcb1.jpg" alt="JCB Machine 1">
+        </div>
+        <div class="slide">
+            <img src="C:/website/jcb2.jpg" alt="JCB Machine 2">
+        </div>
+        <div class="slide">
+            <img src="C:/website/jcb3.jpg" alt="JCB Machine 3">
+        </div>
+        <div class="quote">
+            <p>“Reliable Machines, Reliable Service.”</p>
+            <p>“Get the Best JCB Rentals Here!”</p>
+        </div>
+    </section>
+
+    <!-- Marquee Separator -->
+    <marquee class="separator-marquee" behavior="scroll" direction="left" scrollamount="8">
+        ---- Quality Services for Every Job ----
+    </marquee>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p class="yellow-quote">“Efficiency that digs deep into your satisfaction.”</p>
+        <p class="yellow-quote">“Ready for your toughest job, whenever and wherever.”</p>
+        <p class="yellow-quote">“Let us handle the heavy lifting while you build.”</p>
+        <p class="yellow-quote">“From foundation to finish, we’re with you.”</p>
+        <p class="yellow-quote">“When it comes to reliability, we dig deeper.”</p>
+        <p class="yellow-quote">“High-performance machines, expertly operated.”</p>
+        <p class="yellow-quote">“Exceeding standards one job at a time.”</p>
+        <p class="yellow-quote">“When you need power, precision, and reliability.”</p>
+        <p class="yellow-quote">“Moving earth with ease for every project.”</p>
+    </section>
+
+    <!-- Marquee Separator -->
+    <marquee class="separator-marquee" behavior="scroll" direction="left" scrollamount="8">
+        ---- Explore Our Gallery ----
+    </marquee>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="C:/website/jcb1.jpg" alt="JCB Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="C:/website/jcb2.jpg" alt="JCB Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="C:/website/jcb3.jpg" alt="JCB Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="C:/website/jcb4.jpg" alt="JCB Photo 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Separator -->
+    <marquee class="separator-marquee" behavior="scroll" direction="left" scrollamount="8">
+        ---- Contact Us for the Best JCB Rentals ----
+    </marquee>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +919591237189</p>
+        <p>Address: Sonala, Kamal Nagar, Karnataka, PIN: 585417</p>
+    </section>
+</body>
+</html>
